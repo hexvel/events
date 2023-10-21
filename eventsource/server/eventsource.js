@@ -12,7 +12,7 @@ const emitter = new events.EventEmitter();
 
 app.get("/connect", (req, res) => {
 	res.writeHead(200, {
-		Connection: "keep-alive",
+		"Connection": "keep-alive",
 		"Content-Type": "text/event-stream",
 		"Cache-Control": "no-cache",
 	});
